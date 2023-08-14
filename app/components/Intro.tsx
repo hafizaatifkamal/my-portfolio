@@ -1,9 +1,13 @@
 import Image from "next/image";
 import React from "react";
 
-const HomeIntro: React.FC = () => {
+interface IntroProps {
+  id: string;
+}
+
+const HomeIntro: React.FC<IntroProps> = ({ id }) => {
   return (
-    <section id="home" className="py-12">
+    <section id={id} className="py-20">
       <div className="container mx-auto text-center">
         <div className="mb-auto md:mt-16 flex flex-col md:flex-row justify-center">
           <Image
