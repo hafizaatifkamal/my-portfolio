@@ -6,6 +6,26 @@ body {
   background-color: #f3f4f6;
 }
 
+/* Hide scroll bar in the header section */
+
+header::-webkit-scrollbar {
+  display: none;
+}
+
+/* Style scroll bar in the main content area */
+body::-webkit-scrollbar {
+  width: 0.25em;
+}
+
+body::-webkit-scrollbar-track {
+  background: #e5e7eb;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #6b7280;
+  border-radius: 0.125rem;
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
