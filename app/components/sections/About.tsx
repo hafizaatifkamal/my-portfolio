@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import imageSrc from "../../../assets/images/image_01.jpg";
 
 interface AboutProps {
   id: string;
@@ -12,7 +13,8 @@ const About: React.FC<AboutProps> = ({ id }) => {
         <h2 className="text-3xl font-semibold mb-4">About Me</h2>
         <div className="p-4 justify-center">
           <Image
-            src="https://www.valuebound.com/sites/default/files/pictures/2023-04/IMG_20220718_170151_590.jpg"
+            src={imageSrc}
+            // src="https://www.valuebound.com/sites/default/files/pictures/2023-04/IMG_20220718_170151_590.jpg"
             alt="Atif Kamal"
             width={500}
             height={500}
@@ -20,17 +22,16 @@ const About: React.FC<AboutProps> = ({ id }) => {
           />
           <div className="p-4 mx-auto">
             <p className="text-lg text-gray-600">
-              I'm a passionate Software Development Engineer with a strong
-              foundation in algorithms, data structures, and front-end
-              development. My journey in software engineering began during my
-              college days, and I've been honing my skills ever since. I enjoy
-              tackling complex challenges and creating solutions that deliver
-              meaningful impact. I'm a passionate Software Development Engineer
-              with a strong foundation in algorithms, data structures, and
-              front-end development. My journey in software engineering began
-              during my college days, and I've been honing my skills ever since.
-              I enjoy tackling complex challenges and creating solutions that
-              deliver meaningful impact.
+              Experienced full-stack developer with a proven track record of
+              delivering end-to-end product solutions over 18 months. Proficient
+              in API designing, UI development, and seamless deployment
+              processes. Demonstrated expertise in various technologies and
+              frameworks, ensuring optimal performance and user experience.
+              Collaborative and adaptable, thriving in fast-paced, agile
+              environments. Passionate about creating impactful products that
+              exceed customer expectations. Seeking new challenges to leverage
+              my skills and contribute to cutting-edge projects with a focus on
+              delivering excellence.
             </p>
           </div>
         </div>

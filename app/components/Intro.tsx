@@ -1,5 +1,7 @@
-import Image from "next/image";
+"use client";
 import React from "react";
+import Image from "next/image";
+import ScrollLink from "./ScrollLink";
 
 interface IntroProps {
   id: string;
@@ -17,17 +19,25 @@ const HomeIntro: React.FC<IntroProps> = ({ id }) => {
             height={500}
             className="rounded-full mx-auto w-40 h-40 md:w-48 md:h-48 lg:w-64 lg:h-64"
           />
-          <div className="m-8 px-2 md:px-4">
+          <div className="m-8 px-2 md:px-4 group/item">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
               I'm Atif Kamal
             </h2>
             <p className="m-4 text-lg text-gray-600 max-w-prose mx-auto">
               An experienced Software Development Engineer (SDE-I) passionate
               about crafting efficient and elegant solutions to complex
-              problems. With a strong foundation in algorithms and data
-              structures, I thrive on challenges and am dedicated to continuous
-              learning.
+              problems. Expertise in end-to-end product development. Proficient
+              in API design, UI development, and deployment. Ready to take on
+              new challenges!
             </p>
+            <div className="space-x-4">
+              <button className="px-4 py-2 rounded text-white group/edit invisible transition ease-in-out delay-150 bg-gray-500 hover:-translate-y-1 hover:scale-110 hover:bg-gray-800 duration-300 group-hover/item:visible">
+                <ScrollLink href="#contact">Hire Me!</ScrollLink>
+              </button>
+              <button className="px-4 py-2 rounded text-white group/edit invisible transition ease-in-out delay-150 bg-gray-500 hover:-translate-y-1 hover:scale-110 hover:bg-gray-800 duration-300 group-hover/item:visible">
+                Resume
+              </button>
+            </div>
           </div>
         </div>
       </div>
