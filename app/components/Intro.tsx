@@ -21,7 +21,7 @@ const HomeIntro: React.FC<IntroProps> = ({ id }) => {
           />
           <div className="m-8 px-2 md:px-4 group/item">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
-              I'm Atif Kamal
+              {`I'm Atif Kamal`}
             </h2>
             <p className="m-4 text-lg text-gray-600 max-w-prose mx-auto">
               An experienced Software Development Engineer (SDE-I) passionate
