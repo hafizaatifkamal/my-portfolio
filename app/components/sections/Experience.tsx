@@ -1,6 +1,7 @@
 import React from "react";
 import { experiences } from "@/assets/data/experience";
 import Link from "next/link";
+import Image from "next/image";
 
 interface ExperienceProps {
   id: string;
@@ -22,7 +23,13 @@ const Experience: React.FC<ExperienceProps> = ({ id }) => {
                 target="_blank"
                 className="text-xl sm:flex font-semibold items-center"
               >
-                <img className="w-8 h-8 mr-2 sm:mb-0 rounded" src={e.imgSrc} />
+                <Image
+                  width={32}
+                  height={32}
+                  className="w-8 h-8 mr-2 sm:mb-0 rounded"
+                  src={`/${e.imgSrc}`}
+                  alt={e.company.toLowerCase()}
+                />
                 {e.company}
               </Link>
               <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-4">

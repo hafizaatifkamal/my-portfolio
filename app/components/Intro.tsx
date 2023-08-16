@@ -14,7 +14,7 @@ const HomeIntro: React.FC<IntroProps> = ({ id }) => {
         <div className="mb-auto md:mt-16 flex flex-col md:flex-row justify-center">
           <Image
             src="https://www.valuebound.com/sites/default/files/pictures/2023-04/IMG_20220718_170151_590.jpg"
-            alt="Atif Kamal"
+            alt="atif-kamal"
             width={500}
             height={500}
             className="rounded-full mx-auto w-40 h-40 md:w-48 md:h-48 lg:w-64 lg:h-64"

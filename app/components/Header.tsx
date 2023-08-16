@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import ScrollLink from "./ScrollLink";
+import Image from "next/image";
+import favicon from "../favicon.ico";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,9 +19,10 @@ const Header: React.FC = () => {
           href="#intro"
           className="hover:text-gray-300 flex items-center"
         >
-          <img
+          <Image
             className="w-10 h-10 mr-2 rounded-full sm:mb-0"
-            src="../favicon.ico"
+            src={favicon}
+            alt="logo-image"
           />
           <h1 className="text-2xl font-semibold">Atif Kamal</h1>
         </ScrollLink>
