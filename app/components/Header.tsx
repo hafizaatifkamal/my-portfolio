@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import ScrollLink from "./ScrollLink";
 import Image from "next/image";
-import favicon from "../favicon.ico";
+import imgSrc from "../../assets/images/profile-pic (1).png";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +13,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="shadow-lg bg-gradient-to-r from-gray-400 to-gray-900 text-white py-4 top-0 sticky">
+    <header className="shadow-lg bg-gradient-to-r from-gray-400 to-gray-900 text-white py-4 top-0 sticky z-10">
       <div className="container mx-auto px-2 lg:px-24 flex justify-between items-center">
         <ScrollLink
           href="#intro"
@@ -21,7 +21,7 @@ const Header: React.FC = () => {
         >
           <Image
             className="w-10 h-10 mr-2 rounded-full sm:mb-0"
-            src={favicon}
+            src={imgSrc}
             alt="logo-image"
           />
           <h1 className="text-2xl font-semibold">Atif Kamal</h1>

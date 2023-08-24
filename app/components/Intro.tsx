@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import ScrollLink from "./ScrollLink";
+import imgSrc from "../../assets/images/profile-pic (3).png";
 
 interface IntroProps {
   id: string;
@@ -13,29 +14,50 @@ const HomeIntro: React.FC<IntroProps> = ({ id }) => {
       <div className="container mx-auto text-center">
         <div className="mb-auto md:mt-16 flex flex-col md:flex-row justify-center">
           <Image
-            src="https://www.valuebound.com/sites/default/files/pictures/2023-04/IMG_20220718_170151_590.jpg"
+            src={imgSrc}
+            // src="https://www.valuebound.com/sites/default/files/pictures/2023-04/IMG_20220718_170151_590.jpg"
             alt="atif-kamal"
             width={500}
             height={500}
-            className="rounded-full mx-auto w-40 h-40 md:w-48 md:h-48 lg:w-64 lg:h-64"
+            className="mx-auto w-40 h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 lg:scale-125"
           />
           <div className="m-8 px-2 md:px-4 group/item">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
-              {`I'm Atif Kamal`}
-            </h2>
-            <p className="m-4 text-lg text-gray-600 max-w-prose mx-auto">
-              An experienced Software Development Engineer (SDE-I) passionate
-              about crafting efficient and elegant solutions to complex
-              problems. Expertise in end-to-end product development. Proficient
-              in API design, UI development, and deployment. Ready to take on
-              new challenges!
+            <p className="font-bold">Hello, my name is</p>
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
+              Atif Kamal
+            </h1>
+            <p className="m-4 text-base md:text-lg text-gray-600 max-w-prose mx-auto">
+              <span className="font-bold text-base md:text-2xl">{`I'm a full-stack developer,`}</span>{" "}
+              passionate about crafting efficient and elegant solutions to
+              complex problems. Expertise in{" "}
+              <span className="font-bold italic">end-to-end</span> product
+              development. Proficient in{" "}
+              <span className="font-bold italic">API design</span>,{" "}
+              <span className="font-bold italic">UI development</span>, and{" "}
+              <span className="font-bold italic">deployment</span>. Ready to
+              take on new challenges!
             </p>
             <div className="space-x-4">
-              <button className="px-4 py-2 rounded text-white group/edit invisible transition ease-in-out delay-150 bg-gray-500 hover:-translate-y-1 hover:scale-110 hover:bg-gray-800 duration-300 group-hover/item:visible">
-                <ScrollLink href="#contact">Hire Me!</ScrollLink>
-              </button>
-              <button className="px-4 py-2 rounded text-white group/edit invisible transition ease-in-out delay-150 bg-gray-500 hover:-translate-y-1 hover:scale-110 hover:bg-gray-800 duration-300 group-hover/item:visible">
-                Resume
+              <button className="p-2 rounded text-white group/edit invisible transition ease-in-out delay-150 bg-gray-500 group-hover:translate-x-2 hover:scale-110 hover:bg-gray-800 duration-300 group-hover/item:visible">
+                <ScrollLink href="#contact" className="flex gap-1">
+                  Hire me{" "}
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-4 h-5 mt-0.5"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                  </span>
+                </ScrollLink>
               </button>
             </div>
           </div>

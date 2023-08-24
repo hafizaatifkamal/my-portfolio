@@ -24,10 +24,10 @@ const Experience: React.FC<ExperienceProps> = ({ id }) => {
                 className="text-xl sm:flex font-semibold items-center"
               >
                 <Image
-                  width={32}
-                  height={32}
+                  width={500}
+                  height={500}
                   className="w-8 h-8 mr-2 sm:mb-0 rounded"
-                  src={`/${e.imgSrc}`}
+                  src={e.imgSrc}
                   alt={e.company.toLowerCase()}
                 />
                 {e.company}

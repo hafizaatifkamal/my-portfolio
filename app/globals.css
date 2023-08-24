@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #f3f4f6;
-}
-
 /* Hide scroll bar in the header section */
 
 header::-webkit-scrollbar {

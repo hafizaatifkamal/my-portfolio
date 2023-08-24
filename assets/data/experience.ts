@@ -1,9 +1,11 @@
+import vb_logo from "../images/valuebound.jpeg";
+import chegg_logo from "../images/chegg.jpeg";
+
 export const experiences = [
   {
     company: "Valuebound",
-    src: "https://www.valuebound.com/",
-    imgSrc:
-      "https://media.licdn.com/dms/image/C4E0BAQFXurrY90D9HA/company-logo_100_100/0/1519871469430?e=1700092800&v=beta&t=9XwsvB3C2wcEi6UI0-Ajh0iQvKgvnwldKs6uFLnb5yQ",
+    src: "www.valuebound.com/",
+    imgSrc: vb_logo,
     details: [
       {
         role: "Software Development Engineer",
@@ -19,9 +21,8 @@ export const experiences = [
   },
   {
     company: "Chegg India",
-    src: "https://www.linkedin.com/company/cheggindia/",
-    imgSrc:
-      "https://media.licdn.com/dms/image/C4D0BAQGrZGuUpN9MWQ/company-logo_100_100/0/1627994704506?e=1700092800&v=beta&t=mfcFrMEfUtgBMGRgM3J5ok_wZEaqJU6tDm4tNfbNu8Y",
+    src: "www.linkedin.com/company/cheggindia/",
+    imgSrc: chegg_logo,
     details: [
       {
         role: "Subject Matter Expert",

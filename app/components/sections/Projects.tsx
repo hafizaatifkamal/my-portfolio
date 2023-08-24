@@ -10,15 +10,15 @@ const Projects: React.FC<ProjectsProps> = ({ id }) => {
     <section id={id} className="py-20">
       <div className="container mx-auto px-2 md:px-4">
         <h2 className="text-3xl font-semibold mb-4">Projects</h2>
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 lg:grid-cols-2 grid-flow-row">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="p-6 rounded-lg shadow-md bg-gray-200 hover:bg-gradient-to-r from-gray-50 to-gray-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+              className="p-6 rounded-lg shadow-md min-w-full bg-gray-200 hover:bg-gradient-to-r from-gray-50 to-gray-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
             >
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-gray-600 mb-4">{project.description}</p>
-              <div className="flex space-x-2">
+              <div className=" grid-flow-col space-x-2">
                 {project.technologies.map((tech, techIndex) => (
                   <span
                     key={techIndex}
