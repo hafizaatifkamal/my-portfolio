@@ -12,14 +12,14 @@ const HomeIntro: React.FC<IntroProps> = ({ id }) => {
   return (
     <section id={id} className="py-20">
       <div className="container mx-auto text-center">
-        <div className="mb-auto md:mt-16 flex flex-col md:flex-row justify-center">
+        <div className="mb-auto md:mt-16 flex flex-col lg:flex-row justify-center">
           <Image
             src={imgSrc}
             // src="https://www.valuebound.com/sites/default/files/pictures/2023-04/IMG_20220718_170151_590.jpg"
             alt="atif-kamal"
             width={500}
             height={500}
-            className="mx-auto w-40 h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 lg:scale-125"
+            className="mx-auto w-40 h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 scale-125 lg:scale-150"
           />
           <div className="m-8 px-2 md:px-4 group/item">
             <p className="font-bold">Hello, my name is</p>

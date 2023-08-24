@@ -16,7 +16,7 @@ const Experience: React.FC<ExperienceProps> = ({ id }) => {
           {experiences.map((e, i) => (
             <div
               key={i}
-              className="max-w-lg p-6 rounded-lg shadow-md hover:bg-gray-200"
+              className="max-w-lg p-6 rounded-lg shadow-md bg-gray-50 hover:bg-gradient-to-r from-gray-50 to-gray-300"
             >
               <Link
                 href={e.src}
@@ -26,7 +26,7 @@ const Experience: React.FC<ExperienceProps> = ({ id }) => {
                 <Image
                   width={500}
                   height={500}
-                  className="w-8 h-8 mr-2 sm:mb-0 rounded"
+                  className="w-8 h-8 mr-2 sm:mb-0 rounded shadow-lg"
                   src={e.imgSrc}
                   alt={e.company.toLowerCase()}
                 />

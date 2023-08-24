@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { projects } from "@/assets/data/projects";
 
 interface ProjectsProps {
@@ -14,18 +15,23 @@ const Projects: React.FC<ProjectsProps> = ({ id }) => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="p-6 rounded-lg shadow-md min-w-full bg-gray-200 hover:bg-gradient-to-r from-gray-50 to-gray-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+              className="p-6 rounded-lg shadow-md min-w-full bg-gray-50 hover:bg-gradient-to-r from-gray-50 to-gray-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
             >
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-gray-600 mb-4">{project.description}</p>
-              <div className=" grid-flow-col space-x-2">
+              <div className="flex flex-wrap md:space-x-2">
                 {project.technologies.map((tech, techIndex) => (
-                  <span
+                  <div
                     key={techIndex}
-                    className="px-2 py-1 bg-gradient-to-r from-gray-50 to-gray-200 rounded-md text-gray-800 text-xs"
+                    className="flex items-center space-x-1 p-2 rounded-full shadow-lg bg-gradient-to-r from-gray-50 to-gray-100"
                   >
-                    {tech}
-                  </span>
+                    <Image
+                      src={tech.logo}
+                      alt={tech.name}
+                      width={24}
+                      height={24}
+                    />
+                  </div>
                 ))}
               </div>
               <a
