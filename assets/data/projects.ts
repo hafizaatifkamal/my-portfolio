@@ -29,7 +29,8 @@ export const projects = [
   },
   {
     title: "Grow10x - by Valuebound",
-    description: "OKR tool to grow your org 10X",
+    description:
+      "OKR tool to grow your org 10X. A platform to track individual & company-wide Object & Key Results for the specific organization.",
     technologies: [
       { name: "React", logo: react_logo },
       { name: "Redux", logo: redux_logo },

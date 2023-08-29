@@ -11,17 +11,17 @@ const Experience: React.FC<ExperienceProps> = ({ id }) => {
   return (
     <section id={id} className="py-20">
       <div className="container mx-auto px-2 md:px-4">
-        <h2 className="text-3xl font-semibold mb-4">Experience</h2>
-        <div className="grid gap-6 md:grid-flow-row">
+        <h2 className="text-3xl font-semibold mb-4 text-center">Experience</h2>
+        <div className="grid gap-6 justify-center">
           {experiences.map((e, i) => (
             <div
               key={i}
-              className="max-w-lg p-6 rounded-lg shadow-md bg-gray-50 hover:bg-gradient-to-r from-gray-50 to-gray-300"
+              className="max-w-lg p-6 rounded-lg shadow-lg bg-gradient-to-r from-gray-50 to-gray-200 hover:from-gray-200 hover:to-gray-50"
             >
               <Link
                 href={e.src}
                 target="_blank"
-                className="text-xl sm:flex font-semibold items-center"
+                className="flex text-xl font-semibold items-center"
               >
                 <Image
                   width={500}
@@ -52,7 +52,7 @@ const Experience: React.FC<ExperienceProps> = ({ id }) => {
                     <h3 className="text-lg font-semibold text-gray-900">
                       {d.role}
                     </h3>
-                    <p className="mb-4 text-base font-normal text-gray-500">
+                    <p className="mb-4 text-sm font-normal text-gray-500">
                       {d.description}
                     </p>
                   </li>

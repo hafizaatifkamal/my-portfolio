@@ -24,7 +24,6 @@ const Header: React.FC = () => {
             src={imgSrc}
             alt="logo-image"
           />
-          <h1 className="text-2xl font-semibold">Atif Kamal</h1>
         </ScrollLink>
         <nav className={`md:flex hidden ${isMenuOpen ? `hidden` : `block`}`}>
           <ul className="flex space-x-6">

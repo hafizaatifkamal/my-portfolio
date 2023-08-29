@@ -4,30 +4,33 @@ import chegg_logo from "../images/chegg.jpeg";
 export const experiences = [
   {
     company: "Valuebound",
-    src: "www.valuebound.com/",
+    src: "https://www.valuebound.com",
     imgSrc: vb_logo,
     details: [
       {
         role: "Software Development Engineer",
         duration: "Dec 2021 - Apr 2023",
-        description: "Fullstack Development",
+        description:
+          "Contributed to R&D team, meeting project deadlines. Collaborated on requirements, design, coding, testing, and deployment. Enhanced efficiency via code reviews and optimizations.",
       },
       {
         role: "Software Engineer Trainee",
         duration: "Sep 2021 - Dec 2021",
-        description: "Trainee",
+        description:
+          "Acquired front-end, back-end, and API integration skills. Intensive MERN stack training, hands-on mini projects.",
       },
     ],
   },
   {
     company: "Chegg India",
-    src: "www.linkedin.com/company/cheggindia/",
+    src: "https://www.linkedin.com/company/cheggindia",
     imgSrc: chegg_logo,
     details: [
       {
         role: "Subject Matter Expert",
         duration: "Apr 2021 - Nov 2021",
-        description: "Subject Matter Expert",
+        description:
+          "Performed content creation, answering student questions, quality assurance, optional tutoring, staying updated, and community engagement.",
       },
     ],
   },

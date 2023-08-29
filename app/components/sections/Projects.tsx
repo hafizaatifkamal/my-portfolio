@@ -15,10 +15,12 @@ const Projects: React.FC<ProjectsProps> = ({ id }) => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="p-6 rounded-lg shadow-md min-w-full bg-gray-50 hover:bg-gradient-to-r from-gray-50 to-gray-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+              className="p-6 rounded-lg shadow-lg min-w-full bg-gradient-to-r from-gray-50 to-gray-200 hover:from-gray-200 hover:to-gray-50 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-90 duration-300"
             >
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-gray-600 mb-4">{project.description}</p>
+              <p className="text-sm text-gray-600 mb-4">
+                {project.description}
+              </p>
               <div className="flex flex-wrap md:space-x-2">
                 {project.technologies.map((tech, techIndex) => (
                   <div
@@ -38,7 +40,7 @@ const Projects: React.FC<ProjectsProps> = ({ id }) => {
                 href={project.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 flex gap-1 text-gray-900 hover:underline"
+                className="flex mt-4 text-sm gap-1 text-gray-900 hover:underline"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
