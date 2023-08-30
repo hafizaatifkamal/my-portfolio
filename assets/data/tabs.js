@@ -71,6 +71,29 @@ export const tabs = [
       </div>
     ),
   },
+  {
+    label: "Blogs",
+    content: (
+      <div>
+        <h3 className="font-semibold">
+          Published a blog on the caching implementation in Node.js using
+          <br />
+          Redis, covering key concepts and best practices
+        </h3>
+        <p className="text-sm text-gray-600">
+          The blog was nominated by the company and subsequently published on
+          its official website, reaching a broader audience of developers and
+          receiving positive feedback.{" "}
+          <a
+            href="https://www.valuebound.com/resources/blog/how-cache-data-nodejs-using-redis"
+            target="_blank"
+          >
+            Read more...
+          </a>
+        </p>
+      </div>
+    ),
+  },
   // {
   //   label: "Certifications",
   //   content: (
