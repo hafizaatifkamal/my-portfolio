@@ -26,7 +26,12 @@ const About: React.FC<AboutProps> = ({ id }) => {
         </div>
         <div className="w-2/3 p-4">
           <p className="text-base md:text-lg text-gray-600">
-            Experienced full-stack developer with a proven track record of
+            Experienced full-stack developer with an 18-month track record
+            delivering end-to-end product solutions. Proficient in API design,
+            UI development, and agile deployment. Expertise spans diverse
+            technologies and frameworks for superior user experiences. Eager to
+            contribute to cutting-edge projects with a focus on excellence.
+            {/* Experienced full-stack developer with a proven track record of
             delivering end-to-end product solutions over 18 months. Proficient
             in API designing, UI development, and seamless deployment processes.
             Demonstrated expertise in various technologies and frameworks,
@@ -34,7 +39,7 @@ const About: React.FC<AboutProps> = ({ id }) => {
             adaptable, thriving in fast-paced, agile environments. Passionate
             about creating impactful products that exceed customer expectations.
             Seeking new challenges to leverage my skills and contribute to
-            cutting-edge projects with a focus on delivering excellence.
+            cutting-edge projects with a focus on delivering excellence. */}
           </p>
           <div className="flex justify-center space-x-6 md:space-x-10 m-4">
             {tabs.map((tab, i) => (
