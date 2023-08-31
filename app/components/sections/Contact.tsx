@@ -40,10 +40,10 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
         setShowAlert(true);
         setFormData(initialFormData);
 
-        // Automatically hide the success alert after 1 minute
+        // Automatically hide the success alert after 30 seconds
         setTimeout(() => {
           setShowAlert(false);
-        }, 60000);
+        }, 30000);
         console.log("Thank you for your submission!", response.body);
       } else {
         setSubmitStatus({
@@ -52,10 +52,10 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
         });
         setShowAlert(true);
 
-        // Automatically hide the failure alert after 1 minute
+        // Automatically hide the failure alert after 30 seconds
         setTimeout(() => {
           setShowAlert(false);
-        }, 60000);
+        }, 30000);
       }
     } catch (error) {
       console.error("Error:", error);
