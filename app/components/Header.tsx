@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import ScrollLink from "./ScrollLink";
 import Image from "next/image";
-import imgSrc from "../../assets/images/profile-pic (1).png";
+import imgSrc from "@/assets/images/profile-pic (1).png";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

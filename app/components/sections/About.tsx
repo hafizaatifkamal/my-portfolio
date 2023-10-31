@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import imageSrc from "../../../assets/images/profile-pic (2).png";
+import imageSrc from "@/assets/images/profile_linkedin.jpeg";
 import { tabs } from "@/assets/data/tabs";
 
 interface AboutProps {

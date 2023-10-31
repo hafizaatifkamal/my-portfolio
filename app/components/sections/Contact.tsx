@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 import Notification from "../Notification";
 
 interface ContactProps {
@@ -44,7 +45,6 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
         setTimeout(() => {
           setShowAlert(false);
         }, 30000);
-        console.log("Thank you for your submission!", response.body);
       } else {
         setSubmitStatus({
           type: "failure",
@@ -113,12 +113,35 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
             />
           </div>
           <div className="col-span-2 md:col-span-2">
-            <button
-              type="submit"
-              className="bg-gray-500 text-white px-6 py-2 rounded-lg hover:bg-gradient-to-r from-gray-400 to-gray-900 focus:outline-none"
-            >
-              Send
-            </button>
+            <div className="grid grid-cols-1 md:grid-cols-4 md:divide-x">
+              <div>
+                <button
+                  type="submit"
+                  className="bg-gray-500 text-white px-6 py-2 rounded-lg hover:bg-gradient-to-r from-gray-400 to-gray-900 focus:outline-none"
+                >
+                  Send
+                </button>
+              </div>
+              <div className="p-2 flex">
+                <Link href="mailto:hafizaatifkamal@gmail.com">
+                  <div className="flex gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2.5}
+                      stroke="currentColor"
+                    >
+                      <path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                    </svg>
+                    <p className="text-gray-700 font-semibold">
+                      hafizaatifkamal@gmail.com
+                    </p>
+                  </div>
+                </Link>
+              </div>
+            </div>
           </div>
         </form>
         {showAlert && (

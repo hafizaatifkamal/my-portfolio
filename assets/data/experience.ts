@@ -1,7 +1,21 @@
-import vb_logo from "../images/valuebound.jpeg";
-import chegg_logo from "../images/chegg.jpeg";
+import vb_logo from "@/assets/images/valuebound.jpeg";
+import chegg_logo from "@/assets/images/chegg.jpeg";
+import inzint_logo from "@/assets/images/inzint.png";
 
 export const experiences = [
+  {
+    company: "Inzint Private Limited",
+    src: "https://inzint.com/",
+    imgSrc: inzint_logo,
+    details: [
+      {
+        role: "Associate Software Engineer",
+        duration: "Oct 2023 - Present",
+        description:
+          "Building the operational base of INZINT and expanding the business. Developing and maintaining the operational infrastructure for our products.",
+      },
+    ],
+  },
   {
     company: "Valuebound",
     src: "https://www.valuebound.com",

@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import ScrollLink from "./ScrollLink";
-import imgSrc from "../../assets/images/profile-pic (3).png";
+import imgSrc from "@/assets/images/profile-pic (3).png";
 
 interface IntroProps {
   id: string;
@@ -15,13 +15,12 @@ const HomeIntro: React.FC<IntroProps> = ({ id }) => {
         <div className="mb-auto md:mt-16 flex flex-col lg:flex-row justify-center">
           <Image
             src={imgSrc}
-            // src="https://www.valuebound.com/sites/default/files/pictures/2023-04/IMG_20220718_170151_590.jpg"
             alt="atif-kamal"
             width={500}
             height={500}
             className="mx-auto w-40 h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 scale-125 lg:scale-150"
           />
-          <div className="m-8 px-2 md:px-4 group/item">
+          <div className="m-8 lg:m-0 px-2 md:px-4 group/item">
             <p className="font-bold">Hello, my name is</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
               Atif Kamal
@@ -38,7 +37,7 @@ const HomeIntro: React.FC<IntroProps> = ({ id }) => {
               take on new challenges!
             </p>
             <div className="space-x-4">
-              <button className="p-2 rounded text-white group/edit invisible transition ease-in-out delay-150 bg-gray-500 group-hover:translate-x-2 hover:scale-110 hover:bg-gray-800 duration-300 group-hover/item:visible">
+              <button className="p-2 rounded text-white group/edit md:invisible transition ease-in-out delay-150 bg-gray-500 group-hover:translate-x-2 hover:scale-110 hover:bg-gray-800 duration-300 group-hover/item:visible">
                 <ScrollLink href="#contact" className="flex gap-1">
                   Hire me{" "}
                   <span>
